@@ -1,0 +1,13 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+theme = 'PaperMod'
+title = 'LLM IBM Blog'
+author = 'José Gama'
+pagination.pagerSize = 10
+
+[params]
+  [params.assets]
+    favicon = 'favicon.ico'
+    favicon16x16 = '/favicon-16x16.png'
+    favicon32x32 = '/favicon-32x32.png'
+    appletouchicon = '/apple-touch-icon.png'
