@@ -1,6 +1,7 @@
 ---
-title: "First"
-date: 2024-02-27
+title: "Título do Post"
+date: 2024-02-28
+draft: false
 ---
 
 # Objetivo do blog

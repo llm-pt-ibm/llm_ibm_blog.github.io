@@ -1,7 +1,9 @@
 ---
 title: "Second"
+date: 2024-02-28
+draft: false
 ---
 
-# Objetivo do blog
+# Segundo post
 
-Postar relatórios das atividades da equipe.
+Este é um exemplo de post.
