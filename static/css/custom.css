@@ -1,0 +1,14 @@
+/* Remove o sublinhado de todos os links */
+a {
+    text-decoration: none;
+}
+
+/* Se você quiser remover o sublinhado apenas nos links de título e resumo */
+h1 a, p a {
+    text-decoration: none;
+}
+
+/* Adiciona um efeito de hover se necessário, sem o sublinhado */
+a:hover {
+    text-decoration: underline;  /* Isso pode ser ajustado conforme a necessidade */
+}

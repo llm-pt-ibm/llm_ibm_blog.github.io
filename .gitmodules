@@ -4,3 +4,9 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "hugo-kiera"]
+	path = hugo-kiera
+	url = https://github.com/funkydan2/hugo-kiera
+[submodule "themes/Kiera"]
+	path = themes/Kiera
+	url = https://github.com/funkydan2/hugo-kiera
