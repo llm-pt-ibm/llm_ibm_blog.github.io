@@ -4,10 +4,10 @@ theme = 'Kiera'
 title = 'LLM IBM Blog'
 author = 'José Gama'
 pagination.pagerSize = 10
-copyright = "IBM and UFCG - 2025"
+copyright = "IBM & UFCG - 2025"
 
 [params]
-  disableDarkModeCSS = false
+  disableDarkModeCSS = true
   customCSS = ["css/custom.css"]  # Caminho para o arquivo CSS
   [params.assets]
     favicon = 'favicon.ico'
@@ -17,11 +17,10 @@ copyright = "IBM and UFCG - 2025"
 
 [menu]
   [[menu.main]]
-    name = "Posts"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
+    name = "Equipe"
+    url = "/team/"
     weight = 3
+
+date = ["publishDate"]
+ignoreErrors = ["error-disable-date"]
+hideMeta = true
