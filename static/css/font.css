@@ -1,0 +1,20 @@
+/* Mudando a cor do texto h1 para preto */
+h1 {
+color: #000000 !important;
+}
+  
+/* Este é o seletor específico que define a cor dos links dentro de h1 */
+#container header h1 a {
+color: #000000 !important;
+}
+
+/* Para links em h1 em outras partes do site */
+#container main section#home ul li h1 a,
+#container main article h1 a {
+color: #000000 !important;
+}
+
+/* Para garantir que os estados hover, visited, etc também sejam pretos */
+h1 a:hover, h1 a:visited, h1 a:active {
+color: #000000 !important;
+}

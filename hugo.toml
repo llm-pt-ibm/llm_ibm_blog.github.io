@@ -1,14 +1,14 @@
 baseURL = 'https://example.org/'
 languageCode = 'pt-br'
 theme = 'Kiera'
-title = 'LLM IBM Blog'
-author = 'José Gama'
+title = 'LLM IBM UFCG'
 pagination.pagerSize = 10
 copyright = "IBM & UFCG - 2025"
 
 [params]
+  tagline = "Blog com relatórios periódicos das tarefas realizadas."
   disableDarkModeCSS = true
-  customCSS = ["css/custom.css"]  # Caminho para o arquivo CSS
+  customCSS = ["css/custom.css", "css/font.css"]  # Caminho para o arquivo CSS
   [params.assets]
     favicon = 'favicon.ico'
     favicon16x16 = 'favicon-16x16.png'
@@ -20,7 +20,3 @@ copyright = "IBM & UFCG - 2025"
     name = "Equipe"
     url = "/team/"
     weight = 3
-
-date = ["publishDate"]
-ignoreErrors = ["error-disable-date"]
-hideMeta = true
