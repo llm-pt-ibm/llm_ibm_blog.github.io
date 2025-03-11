@@ -12,3 +12,12 @@ h1 a, p a {
 a:hover {
     text-decoration: underline;  /* Isso pode ser ajustado conforme a necessidade */
 }
+
+/* Justifica o texto dos posts */
+.post-content p, 
+article p, 
+.entry-content p, 
+.content p, 
+main p {
+    text-align: justify;
+}

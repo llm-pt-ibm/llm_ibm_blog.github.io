@@ -8,7 +8,8 @@ copyright = "IBM & UFCG - 2025"
 [params]
   tagline = "Blog com relatórios periódicos das tarefas realizadas."
   disableDarkModeCSS = true
-  customCSS = ["css/custom.css", "css/font.css"]  # Caminho para o arquivo CSS
+  customCSS = ["css/custom.css", "css/font.css"]
+  site_logo = "/site_logo.png"
   [params.assets]
     favicon = 'favicon.ico'
     favicon16x16 = 'favicon-16x16.png'
@@ -20,3 +21,9 @@ copyright = "IBM & UFCG - 2025"
     name = "Equipe"
     url = "/team/"
     weight = 3
+
+  [[menu.main]]
+      name = "Início"
+      url = "/"
+      weight = 2
+

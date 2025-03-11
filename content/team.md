@@ -1,7 +1,6 @@
 ---
 title: "Equipe"
 type: "page"
-hideDate: true
 ---
 
 João Arthur: joao.arthur@computacao.ufcg.edu.br  
