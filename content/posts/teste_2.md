@@ -1,9 +1,10 @@
 ---
-date: 2023-01-01
+title: "Fundação da IBM"
+date: 2025-03-12
+tags: ["ibm", "llm"]
+authors: ["José Gama"]
 draft: false
 ---
-
-# Fundação da IBM
 
 A International Business Machines Corporation, mais conhecida como IBM, foi fundada em 16 de junho de 1911 nos Estados Unidos. No início, a empresa não era exatamente como a conhecemos hoje. Sua origem remonta à fusão de três companhias menores: a Tabulating Machine Company, a International Time Recording Company e a Computing Scale Company, que juntas formaram a Computing-Tabulating-Recording Company (CTR). O nome "International Business Machines" só foi adotado oficialmente em 1924.
 
