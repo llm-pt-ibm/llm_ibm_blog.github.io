@@ -43,12 +43,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4  # Atualizado para a versão v4
         with:
-          submodules: recursive  # Garante que os submódulos sejam incluídos na verificação
-          fetch-depth: 0
-      - name: Update submodules
-        run: |
-          git submodule sync  # Sincroniza a URL do submódulo
-          git submodule update --init --recursive --remote  # Atualiza os submódulos
+          fetch-depth: 0  # Para garantir que o histórico completo seja baixado
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
