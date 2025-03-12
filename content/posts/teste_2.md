@@ -1,6 +1,6 @@
 ---
 title: "Fundação da IBM"
-date: 2025-03-12
+date: 2025-02-12
 tags: ["ibm", "llm"]
 authors: ["José Gama"]
 draft: false

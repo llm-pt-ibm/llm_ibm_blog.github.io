@@ -36,3 +36,8 @@ copyright = "IBM & UFCG - 2025"
   author = "authors"
   tag = "tags"
   category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
