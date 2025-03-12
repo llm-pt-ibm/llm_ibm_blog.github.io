@@ -10,7 +10,7 @@ Bem-vindo ao blog do projeto LLM-PT-IBM. Aqui, serão apresentados relatórios e
 
 Para publicar algo no blog, basta adicionar o conteúdo dentro de um arquivo em formato markdown (`.md`) no diretório `/content/posts/`.  
 
-Um exemplo de _template_ para publicação está disponível abaixo para ser copiado.
+Um exemplo de _template_ para publicação está disponível abaixo.
 
 <!-- Incluindo o Font Awesome para os ícones -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
