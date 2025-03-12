@@ -40,11 +40,14 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         run: sudo snap install dart-sass
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4  # Atualizado para a versão v4
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Update submodules
+        run: |
+          git submodule update --init --recursive --remote  # Atualiza os submódulos
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
@@ -59,7 +62,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-artifact@v4  # Atualizado para a versão v4
         with:
