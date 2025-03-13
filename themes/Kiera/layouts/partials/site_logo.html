@@ -1,7 +1,8 @@
 {{ if or (.Site.Params.site_logo) (.Params.replace_site_logo) }}
 <div class="site_logo featured_image">
     <a href="{{ .Site.BaseURL }}">
-        <img class="{{ .Site.Params.site_logo_classes }}" src="{{ if .Params.replace_site_logo }}{{ relURL (index .Params.images 0) }}{{ else }}{{ relURL .Site.Params.site_logo }}{{ end }}">
+        <img class="{{ .Site.Params.site_logo_classes }}" 
+             src="{{ if .Params.replace_site_logo }}{{ relURL (index .Params.images 0) }}{{ else }}{{ if .Site.Params.site_logo }}{{ relURL .Site.Params.site_logo }}{{ else }}{{ relURL "/static/site_logo.png" }}{{ end }}{{ end }}">
     </a>
 </div>
 {{ end }}
