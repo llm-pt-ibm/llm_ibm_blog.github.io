@@ -14,5 +14,5 @@ Iriedson Souto: iriedson@copin.ufcg.edu.br
 José Gama: jose.gama@copin.ufcg.edu.br  
 Lucas Pereira: lucas.pereira@ccc.ufcg.edu.br  
 Mateus Matias: mateus.ribeiro@ccc.ufcg.edu.br  
-Ronaldd Costa: ronaldd.feliph.matias.costa@ccc.ufcg.edu.br  
+Ronaldd Matias: ronaldd.feliph.matias.costa@ccc.ufcg.edu.br  
 Thallyson Alves: thallyson.alves@ccc.ufcg.edu.br
