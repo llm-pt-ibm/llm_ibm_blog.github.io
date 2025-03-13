@@ -56,8 +56,15 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      - name: List files in public directory  # Verifica o conteúdo do diretório public
-        run: ls -R ./public  # Lista os arquivos no diretório public para verificar se está correto
+      - name: Verify public directory
+        run: |
+          if [ -d "./public" ]; then
+            echo "Directory ./public exists. Listing contents:"
+            ls -R ./public  # Lista o conteúdo do diretório public
+          else
+            echo "Error: ./public directory does not exist!"
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
