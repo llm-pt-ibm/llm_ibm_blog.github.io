@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<section id="home">
+  <ul>
+    {{ $pages := where site.RegularPages "Type" "posts" }}
+    {{ $paginator := .Paginate $pages.ByDate.Reverse }}
+    {{ range $index, $page := $paginator.Pages }}
+
+    <li {{ if eq $index 0 }}class="first" {{ end }}>
+      <!-- Link no título e no resumo -->
+      <h1><a href="{{ $page.Permalink }}" title="{{ $page.Title }}">{{ $page.Title }}</a></h1>
+
+      <!-- Resumo clicável -->
+      <p><a href="{{ $page.Permalink }}">{{ $page.Summary }}</a></p>
+
+      <!-- Exibindo a imagem destacada -->
+      {{ partial "featured_image" $page }}
+
+      <!-- Verificando se o conteúdo foi truncado e exibindo "read more" -->
+      {{ if $page.Truncated }}
+      <a href="{{ $page.RelPermalink }}">{{ T "readMore" }}</a>
+      {{ end }}
+    </li>
+
+    {{ end }}
+  </ul>
+</section>
+
+{{ template "_internal/pagination.html" . }}
+
+{{ end }}

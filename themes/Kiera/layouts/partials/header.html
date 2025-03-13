@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+
+<head>
+  <title>{{ if and (not .IsHome) (.Title) }}{{ .Params.Title }} - {{ end }}{{ .Site.Title }}</title>
+  {{ partial "meta" . }}
+  {{ partialCached "header_includes" . -}}
+
+  {{ if (templates.Exists "partials/header_supplement.html") }}
+    {{ partial "header_supplement.html" . -}}
+  {{ end }}
+  <style>
+    .site-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+    .site-header .logo-wrapper {
+      margin-left: 20px; /* Adiciona espaço entre o título e a imagem */
+    }
+    .site-header .title-tagline-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .site-header img,
+    .site-header .logo-wrapper img,
+    .logo-wrapper img,
+    header img {
+      max-height: 70px;
+      width: auto;
+      display: block;
+      margin: 0;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      filter: none !important;
+      text-shadow: none !important;
+    }
+    /* Reduz o espaço depois do cabeçalho */
+    header {
+      margin-bottom: 0px;
+    }
+    /* Ajusta margens para o título e tagline */
+    header h1 {
+      margin-bottom: 5px; /* Pequeno espaço entre título e tagline */
+      margin-top: 0;
+    }
+    /* Estilo para a tagline */
+    .tagline {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div class="site-header">
+        <div class="title-tagline-wrapper">
+          <h1>
+            <a href="{{ "" | absURL }}">{{ .Site.Title | markdownify }}</a>
+          </h1>
+          {{ with .Site.Params.tagline }}
+          <p class="tagline"><em>{{ . | markdownify }}</em></p>
+          {{ end }}
+        </div>
+        <div class="logo-wrapper">
+          {{ partial "site_logo" . }}
+        </div>
+      </div>
+
+      <ul id="social-media">
+        {{- range .Site.Languages -}}
+          {{ if ne .LanguageName $.Site.Language.LanguageName }}
+            <li><a href="/{{ .Lang }}">{{ .LanguageName }}</a></li>
+          {{ end }}
+        {{- end -}}
+        {{- range .Site.Data.social.social_icons -}}
+          {{- if isset $.Site.Params.Author .id }}
+             <li>
+               <a href="{{ printf .url (index $.Site.Params.Author .id) }}" title="{{ .title }}">
+               <i class="{{ .icon }} fa-lg"></i>
+               </a>
+             </li>
+           {{- end -}}
+        {{ end }}
+      </ul>
+    </header>
+
+    {{ partial "nav" . }}
+
+    <main>
