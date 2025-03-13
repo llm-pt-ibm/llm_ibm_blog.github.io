@@ -34,14 +34,14 @@ jobs:
         run: sudo snap install dart-sass
 
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # Utilizando a versão v4 do checkout
         with:
           fetch-depth: 0  # Para garantir que o histórico completo seja baixado
           submodules: false  # Desabilitando submódulos
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v4  # Mantendo a versão v4 da configuração de Pages
 
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
@@ -67,7 +67,7 @@ jobs:
           fi
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4  # Utilizando a versão v4 para upload de artefatos
         with:
           name: public  # Nome do artefato, garantindo que seja o mesmo nome usado no deploy
           path: ./public  # Caminho do artefato (diretório que contém o build gerado pelo Hugo)
@@ -81,6 +81,6 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4  # Utilizando a versão v4 do deploy
         with:
           artifact_name: public  # Referência ao nome do artefato gerado no job de build
