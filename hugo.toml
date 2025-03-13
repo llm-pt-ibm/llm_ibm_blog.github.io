@@ -1,4 +1,4 @@
-baseURL = 'https://llm_ibm_blog.github.io/'
+baseURL = 'https://llm-pt-ibm.github.io/llm_ibm_blog.github.io/'
 languageCode = 'pt-br'
 theme = 'Kiera'
 title = 'LLM IBM UFCG'
