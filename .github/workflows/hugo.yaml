@@ -34,14 +34,14 @@ jobs:
         run: sudo snap install dart-sass
 
       - name: Checkout code
-        uses: actions/checkout@v4  # Utilizando a versão v4 do checkout
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Para garantir que o histórico completo seja baixado
-          submodules: false  # Desabilitando submódulos
+          fetch-depth: 0
+          submodules: false
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4  # Mantendo a versão v4 da configuração de Pages
+        uses: actions/configure-pages@v4
 
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
@@ -60,27 +60,41 @@ jobs:
         run: |
           if [ -d "./public" ]; then
             echo "Directory ./public exists. Listing contents:"
-            ls -R ./public  # Lista o conteúdo do diretório public
+            ls -R ./public
           else
             echo "Error: ./public directory does not exist!"
             exit 1
           fi
 
+      - name: Remove symbolic and hard links
+        run: |
+          # Remove symlinks and hard links
+          find ./public -type l -exec rm -f {} \;  # Remove symbolic links
+          find ./public -type f -links +1 -exec rm -f {} \;  # Remove hard links
+
+      - name: Check size of public directory
+        run: |
+          du -sh ./public
+          if [ $(du -s ./public | awk '{print $1}') -gt 10000 ]; then
+            echo "Error: The public directory size exceeds 10GB!"
+            exit 1
+          fi
+
       - name: Upload artifact
-        uses: actions/upload-artifact@v4  # Utilizando a versão v4 para upload de artefatos
+        uses: actions/upload-artifact@v4
         with:
-          name: public  # Nome do artefato, garantindo que seja o mesmo nome usado no deploy
-          path: ./public  # Caminho do artefato (diretório que contém o build gerado pelo Hugo)
+          name: public
+          path: ./public
 
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build  # Garantindo que o deploy só será executado após o build ser concluído
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4  # Utilizando a versão v4 do deploy
+        uses: actions/deploy-pages@v4
         with:
-          artifact_name: public  # Referência ao nome do artefato gerado no job de build
+          artifact_name: public
