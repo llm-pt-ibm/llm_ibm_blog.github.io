@@ -54,7 +54,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://llm-pt-ibm.github.io/llm_ibm_blog.github.io/"  # Atualize para sua baseURL correta
 
       - name: Verify public directory
         run: |
