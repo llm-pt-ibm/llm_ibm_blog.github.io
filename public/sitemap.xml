@@ -17,20 +17,10 @@
     <loc>http://localhost:1313/llm_ibm_blog.github.io/posts/</loc>
     <lastmod>2025-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/llm_ibm_blog.github.io/posts/teste_2/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/llm_ibm_blog.github.io/tags/ibm/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/llm_ibm_blog.github.io/tags/llm/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/llm_ibm_blog.github.io/tags/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/llm_ibm_blog.github.io/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/llm_ibm_blog.github.io/team/</loc>
+  </url><url>
+    <loc>http://localhost:1313/llm_ibm_blog.github.io/tags/</loc>
   </url>
 </urlset>
