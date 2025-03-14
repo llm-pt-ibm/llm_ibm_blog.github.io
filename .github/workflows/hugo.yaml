@@ -54,7 +54,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "https://llm-pt-ibm.github.io/llm_ibm_blog.github.io/"  # Atualize para sua baseURL correta
+            --baseURL "https://llm-pt-ibm-ufcg.github.io/"  # Atualize para sua baseURL correta
 
       - name: Verify public directory
         run: |
