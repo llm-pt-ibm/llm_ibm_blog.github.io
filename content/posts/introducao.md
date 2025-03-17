@@ -2,7 +2,6 @@
 title: "Introdução ao blog"
 date: 2025-03-12
 authors: ['José Gama']
-summary: "Boas-vindas e como publicar."
 draft: false
 ---
 
