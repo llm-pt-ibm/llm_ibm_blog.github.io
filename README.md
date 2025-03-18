@@ -6,7 +6,7 @@ Este blog foi desenvolvido utilizando o Hugo, um framework de geração de sites
 
 A seguir, você encontrará um tutorial com instruções para executar o blog localmente e adicionar uma nova publicação.
 
-## Executando o servidor localmente
+## Executando o blog localmente
 
 Certifique-se de que o Hugo está instalado em sua máquina. Para verificar, execute:
 
