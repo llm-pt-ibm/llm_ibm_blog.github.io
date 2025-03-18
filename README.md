@@ -1,3 +1,5 @@
+![](/static/site_logo.png)
+
 # Blog do Projeto LLM-PT-IBM
 
 Este repositório contém o código-fonte do blog do projeto *LLM-PT-IBM*, desenvolvido em parceria entre a **Universidade Federal de Campina Grande (UFCG)** e a **IBM**. O blog apresenta relatórios e resultados relacionados à avaliação de modelos de linguagem para a língua portuguesa. Aqui, você encontrará todo o conteúdo do blog, incluindo posts, análises e atualizações sobre os avanços do projeto. Para visualizar o blog em funcionamento, acesse este [link](https://llm-pt-ibm.github.io/llm_ibm_blog.github.io/).
@@ -55,7 +57,7 @@ Se o Docker não estiver instalado, siga as instruções da [documentação ofic
 
 3. Após rodar o container, você poderá acessar seu site Hugo no navegador em:
    ```
-   http://localhost:1313
+   http://localhost:1313/llm_ibm_blog.github.io/
    ```
 
 ## Adicionando uma publicação ao blog
