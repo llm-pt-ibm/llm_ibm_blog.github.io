@@ -1,6 +1,6 @@
 # Blog do Projeto LLM-PT-IBM
 
-Este repositório contém o código-fonte do blog do projeto *LLM-PT-IBM*, desenvolvido em parceria entre a **Universidade Federal de Campina Grande (UFCG)** e a **IBM**. O blog apresenta relatórios e resultados relacionados à avaliação de modelos de linguagem para a língua portuguesa. Aqui, você encontrará todo o conteúdo do blog, incluindo posts, análises e atualizações sobre os avanços do projeto. Para visualizar o blog em funcionamento, acesse: 
+Este repositório contém o código-fonte do blog do projeto *LLM-PT-IBM*, desenvolvido em parceria entre a **Universidade Federal de Campina Grande (UFCG)** e a **IBM**. O blog apresenta relatórios e resultados relacionados à avaliação de modelos de linguagem para a língua portuguesa. Aqui, você encontrará todo o conteúdo do blog, incluindo posts, análises e atualizações sobre os avanços do projeto. Para visualizar o blog em funcionamento, acesse este [link](https://llm-pt-ibm.github.io/llm_ibm_blog.github.io/).
 
 Este blog foi desenvolvido utilizando o Hugo, um framework de geração de sites estáticos rápido e flexível, baseado em Go. Para mais informações, visite a documentação oficial: https://gohugo.io/.
 
