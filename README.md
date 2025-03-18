@@ -8,6 +8,10 @@ A seguir, você encontrará um tutorial com instruções para executar o blog lo
 
 ## Executando o blog localmente
 
+Você pode executar o blog de duas formas: instalando o Hugo diretamente ou utilizando Docker.
+
+### Executando o Servidor Hugo
+
 Certifique-se de que o Hugo está instalado em sua máquina. Para verificar, execute:
 
 ```sh
@@ -16,17 +20,42 @@ hugo version
 
 Se o Hugo não estiver instalado, consulte a [documentação oficial](https://gohugo.io/getting-started/installing/) para instalá-lo.
 
+#### Passos para executar o servidor Hugo
 
-### Executando o Servidor Hugo
 
-1. Navegue até a pasta raiz e execute o servidor localmente:
+1. Navegue até a pasta raiz do projeto e execute o servidor localmente:
    ```sh
    hugo server
    ```
 
-2. O servidor será iniciado e ficará disponível em uma das portas locais, que será exibida no terminal, como, por exemplo:
+2. O servidor será iniciado e estará disponível em uma das portas locais. A URL será exibida no terminal, como no exemplo abaixo:
    ```
    http://localhost:1313/llm_ibm_blog.github.io/
+   ```
+### Executando o Servidor Hugo com Docker
+
+Caso prefira usar o Docker, siga os passos abaixo. Primeiramente, verifique se o Docker está instalado em sua máquina:
+
+```sh
+docker --version
+```
+
+Se o Docker não estiver instalado, siga as instruções da [documentação oficial do Docker](https://docs.docker.com/get-docker/) para instalá-lo.
+
+#### Passos para executar o Hugo com Docker
+
+1. No terminal, execute o comando abaixo para construir a imagem Docker a partir do Dockerfile:
+   ```bash
+   sudo docker build -t hugo-server .
+
+2. Após a imagem ser construída, execute o seguinte comando para iniciar o contêiner com o Hugo:
+   ```
+   sudo docker run --rm -p 1313:1313 -v $(pwd):/site hugo-server
+   ```
+
+3. Após rodar o container, você poderá acessar seu site Hugo no navegador em:
+   ```
+   http://localhost:1313
    ```
 
 ## Adicionando uma publicação ao blog
@@ -34,7 +63,8 @@ Se o Hugo não estiver instalado, consulte a [documentação oficial](https://go
 1. Crie uma nova _branch_ no repositório.
 2. Adicione o conteúdo que deseja publicar em um arquivo no formato Markdown (`.md`) dentro do diretório `/content/posts/`.
 3. Execute o blog localmente para garantir que as alterações foram aplicadas corretamente.
-4. Realize um _pull request_ da _branch_ com o conteúdo adicionado.
+4. Crie um _pull request_ para mesclar a sua _branch_ com a branch principal do repositório.
+5. Aguarde o _pull request_ ser revisado e aceito. Após a aprovação, as alterações serão publicadas no blog.
 
 Um exemplo de _template_ para publicação está disponível abaixo.
 ```
