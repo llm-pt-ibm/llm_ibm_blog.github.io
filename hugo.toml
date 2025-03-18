@@ -41,3 +41,8 @@ copyright = "IBM & UFCG - 2025"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[module]
+  [[module.mounts]]
+  source = 'static'
+  target = 'assets'
