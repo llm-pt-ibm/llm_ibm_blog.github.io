@@ -94,3 +94,13 @@ O que será feito a seguir? Há melhorias planejadas, novos experimentos ou desa
 ## Recursos e Referências  
 Links úteis, papers, repositórios ou outras referências que sejam relevantes para quem quiser se aprofundar no tema.
 ```
+
+### Adicionando imagens nas publicações
+
+No Hugo, a maneira mais simples de incluir imagens nas suas publicações é armazená-las na pasta ``/static``. Qualquer arquivo colocado nesta pasta será acessível diretamente através da URL do seu site.
+
+Para adicionar uma imagem no seu post, basta utilizar a seguinte sintaxe em Markdown, substituindo ``minha-imagem.jpg`` pelo nome do arquivo que você colocou na pasta ``/static``:
+
+```markdown
+![Texto Alternativo](/minha-imagem.jpg)
+```
