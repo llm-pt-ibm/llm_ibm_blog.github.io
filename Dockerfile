@@ -14,4 +14,4 @@ WORKDIR /site
 EXPOSE 1313
 
 # Comando para rodar o servidor Hugo automaticamente ao iniciar o container
-ENTRYPOINT ["sh", "-c", "hugo server --bind 0.0.0.0 --port 1313 --baseURL http://localhost:1313 --watch --disableFastRender"]
+CMD ["hugo", "server", "--baseURL=http://localhost:1313/llm_ibm_blog.github.io/", "--appendPort=false", "--bind=0.0.0.0"]

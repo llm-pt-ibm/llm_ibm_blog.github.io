@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
  <channel>
    <title>Posts on LLM IBM UFCG</title>
-   <link>http://localhost:1313/posts/</link>
+   <link>http://localhost:1313/llm_ibm_blog.github.io/posts/</link>
    <description>Recent content in Posts on LLM IBM UFCG</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>pt-br</language>
    <copyright>IBM &amp; UFCG - 2025</copyright>
    <lastBuildDate>Wed, 12 Mar 2025 00:00:00 +0000</lastBuildDate>
    
-       <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+       <atom:link href="http://localhost:1313/llm_ibm_blog.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
    
    
      <item>
        <title>Introdução</title>
-       <link>http://localhost:1313/posts/introducao/</link>
+       <link>http://localhost:1313/llm_ibm_blog.github.io/posts/introducao/</link>
        <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
        
-       <guid>http://localhost:1313/posts/introducao/</guid>
+       <guid>http://localhost:1313/llm_ibm_blog.github.io/posts/introducao/</guid>
        <description>&lt;p&gt;Bem-vindo ao blog do projeto LLM-PT-IBM. Aqui, serão apresentados relatórios e resultados do projeto desenvolvido em parceria entre a Universidade Federal de Campina Grande (UFCG) e a IBM, com foco na avaliação de modelos de linguagem para a língua portuguesa. Assim será possível acompanhar atualizações sobre os avanços e análises realizadas ao longo do projeto.&lt;/p&gt;</description>
      </item>
    
