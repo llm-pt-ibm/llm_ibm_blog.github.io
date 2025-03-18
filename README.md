@@ -24,9 +24,9 @@ Se o Hugo não estiver instalado, consulte a [documentação oficial](https://go
    hugo server
    ```
 
-2. O servidor será iniciado e estará disponível em:
+2. O servidor será iniciado e ficará disponível em uma das portas locais, que será exibida no terminal, como, por exemplo:
    ```
-   http://localhost:1313/
+   http://localhost:1313/llm_ibm_blog.github.io/
    ```
 
 ## Adicionando uma publicação ao blog
