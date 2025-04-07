@@ -21,5 +21,14 @@
        <description>&lt;p&gt;Bem-vindo ao blog do projeto LLM-PT-IBM. Aqui, serão apresentados relatórios e resultados do projeto desenvolvido em parceria entre a Universidade Federal de Campina Grande (UFCG) e a IBM, com foco na avaliação de modelos de linguagem para a língua portuguesa. Assim será possível acompanhar atualizações sobre os avanços e análises realizadas ao longo do projeto.&lt;/p&gt;</description>
      </item>
    
+     <item>
+       <title>Realizando Inferências em CPU na Power10</title>
+       <link>http://localhost:1313/llm_ibm_blog.github.io/posts/power10_post/</link>
+       <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+       
+       <guid>http://localhost:1313/llm_ibm_blog.github.io/posts/power10_post/</guid>
+       <description>&lt;h2 id=&#34;contexto&#34;&gt;Contexto&lt;/h2&gt;&lt;p&gt;Neste post iremos apresentar a nossa experiência em executar o modelo Granite-20b-Code-Instruct em uma máquina Power10, apresentando os desafios e demais configurações necessárias para realizar inferências utilizando o Llama.cpp, uma das bibliotecas opensource mais populares neste domínio.&lt;/p&gt;&lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Este post apresenta detalhes sobre como configurar e realizar inferências utilizando a infraestrutura da IBM Power 10;&lt;/li&gt;&lt;li&gt;Nosso maior desafio foi a configuração do Llama cpp, que demandou ajustes como a instalação do Ninja-builder, realização da compilação do OpenBLAS e atualização do compilador C.&lt;/li&gt;&lt;/ul&gt;&lt;h2 id=&#34;infraestrutura&#34;&gt;Infraestrutura&lt;/h2&gt;&lt;p&gt;Resumo dos achados, principais insights e impactos dos experimentos ou do desenvolvimento realizado. Pode incluir tabelas, gráficos ou comparações.&lt;/p&gt;&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos Passos&lt;/h2&gt;&lt;p&gt;O que será feito a seguir? Há melhorias planejadas, novos experimentos ou desafios a serem enfrentados?&lt;/p&gt;&lt;h2 id=&#34;recursos-e-referências&#34;&gt;Recursos e Referências&lt;/h2&gt;&lt;p&gt;Links úteis, papers, repositórios ou outras referências que sejam relevantes para quem quiser se aprofundar no tema.&lt;/p&gt;</description>
+     </item>
+   
  </channel>
 </rss>
