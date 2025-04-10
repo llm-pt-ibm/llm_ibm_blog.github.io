@@ -105,4 +105,4 @@ public class HelloWorld {
 }
 ```
 
-Com isso, agora somos capazes de realizar inferências em CPU. Nossos próximos passos visa realizar essa inferências utilizando o Framework de avaliação HELM (Holistic Evaluation of Language Models) como mediador.
+Com isso, agora somos capazes de realizar inferências em CPU. Nossos próximos passos visa realizar essas inferências utilizando o Framework de avaliação HELM (Holistic Evaluation of Language Models) como mediador.
