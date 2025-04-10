@@ -1,15 +1,15 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
  <channel>
-   <title>LLM IBM UFCG</title>
-   <link>http://localhost:1313/llm_ibm_blog.github.io/</link>
-   <description>Recent content on LLM IBM UFCG</description>
+   <title>Time IBM on LLM IBM UFCG</title>
+   <link>http://localhost:1313/llm_ibm_blog.github.io/authors/time-ibm/</link>
+   <description>Recent content in Time IBM on LLM IBM UFCG</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>pt-br</language>
    <copyright>IBM &amp; UFCG - 2025</copyright>
    <lastBuildDate>Wed, 12 Mar 2025 00:00:00 +0000</lastBuildDate>
    
-       <atom:link href="http://localhost:1313/llm_ibm_blog.github.io/index.xml" rel="self" type="application/rss+xml" />
+       <atom:link href="http://localhost:1313/llm_ibm_blog.github.io/authors/time-ibm/index.xml" rel="self" type="application/rss+xml" />
    
    
      <item>
