@@ -1,6 +1,6 @@
 ---
 title: "Realizando Inferências em CPU na Power10"
-date: 2025-06-05 # ano-mês-dia
+date: 2025-04-06 # ano-mês-dia
 authors: ["André Alves", "Ronaldd Matias"] # Pode ser uma lista
 tags: ["LLM", "Power10"]
 summary: "Realizando inferência em CPU utilizando a Power10."
