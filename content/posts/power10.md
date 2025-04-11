@@ -18,7 +18,7 @@ Neste post iremos apresentar a nossa experiência em executar o modelo Granite-2
 As inferências foram realizadas em uma máquina com arquitetura IBM POWER10, equipada com 750GB de memória RAM e executando o sistema operacional Red Hat Enterprise Linux 8.10. O acesso ao ambiente é realizado por meio de uma VM, sendo necessário o uso de uma VPN para estabelecer uma comunicação segura e controlada com o sistema, possibilitando a execução das atividades de forma remota e eficiente.
 
 ## Setup Inicial  
-A biblioteca que nos permite executar LLMs utilizando os recursos computacionais da CPU é o Llama.cpp. Para a sua configuração, foi necessário resolver duas dependências externas: o Ninja-builder e o OpenBLAS. O NinjaBuilder é responsável por otimizar o processo de compulação, enquanto o OpenBLAS é uma biblioteca responsável pelos cálculos matriciais de alto desempenho.
+A biblioteca que nos permite executar LLMs utilizando os recursos computacionais da CPU é o Llama.cpp. Para a sua configuração, foi necessário resolver duas dependências externas: o Ninja-builder e o OpenBLAS. O NinjaBuilder é responsável por otimizar o processo de compilação, enquanto o OpenBLAS é uma biblioteca responsável pelos cálculos matriciais de alto desempenho.
 
 Durante o processo de build do OpenBLAS, identificamos discrepâncias nos testes internos de validação dos cálculos matriciais, indicando um problema de compatibilidade com o compilador C disponível, que estava em uma versão mais antiga, a 8.5.0. A solução, portanto, **foi a atualização do compilador para uma versão mais recente, a 13.2**, garantindo melhor compatibilidade com a arquitetura Power10 e validando a precisão das operações numéricas necessárias para o funcionamento do Llama.cpp. A seguir, apresentamos o passo a passo realizado para viabilizar a compilação das bibliotecas necessárias, bem como a atualização do compilador C.
 
@@ -54,7 +54,7 @@ Com todos esses passos realizados com sucesso, o ambiente foi devidamente config
 ## Realizando Inferência
 
 Nós escolhemos o modelo Granite-20b-code-instruct no formato .GGUF, que é desenvolvido especificamente para otimizar o desempenho de modelos de linguagem em ambientes que utilizam apenas CPU. Esses modelos são quantizados, ou seja, a precisão dos cálculos feitos por eles são reduzidas, e, por conseguinte, o tamanho e consumo de memória também são menores, tornando-os ideais para a execução eficiente com Llama.cpp. Essa abordagem viabiliza inferências locais com alto desempenho, mesmo em arquiteturas baseadas exclusivamente em processadores, como é o caso da POWER10.
-O load do modelo foi feito diretamente do Hugging Face. A seguir, mostraremos o passo a passo para realizar o download:
+O download do modelo foi feito diretamente do Hugging Face. A seguir, mostraremos o passo a passo para realizar o download:
 
 1. Criar um diretório para o modelo no Llama.cpp:
 
@@ -80,7 +80,7 @@ O último passo pode ser mais demorado a depender da quantidade de parâmetros d
 /root/llama.cpp/build/bin/llama-server --host 0.0.0.0 --model /root/llama.cpp/models/granite-20b-code-instruct-8k-GGUF/granite-20b-code-instruct.Q4_K_M.gguf
 ```
 
-Com o servidor do Llama server executando na porta 8080, agora somos capazes de realizar inferências via requisições HTTP. Neste exemplo, para fins de simplicidade, utilizamos o curl para requisições:
+Com o servidor do Llama.cpp executando na porta 8080, agora somos capazes de realizar inferências via requisições HTTP. Neste exemplo, para fins de simplicidade, utilizamos o curl para requisições:
 
 
 ```
@@ -105,4 +105,4 @@ public class HelloWorld {
 }
 ```
 
-Com isso, agora somos capazes de realizar inferências em CPU. Nossos próximos passos visa realizar essas inferências utilizando o Framework de avaliação HELM (Holistic Evaluation of Language Models) como mediador.
+Com isso, agora somos capazes de realizar inferências em CPU. Nossos próximos passos visa realizar essas inferências utilizando o *Framework* de avaliação HELM (*Holistic Evaluation of Language Models*) como mediador. 
