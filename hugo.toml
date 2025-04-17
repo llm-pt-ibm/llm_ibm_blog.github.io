@@ -1,4 +1,4 @@
-baseURL = "https://llm-pt-ibm.github.io/llm_ibm_blog.github.io/"
+baseURL = "https://llm-pt-ibm.github.io/"
 languageCode = 'pt-br'
 theme = 'Kiera'
 title = 'LLM IBM UFCG'
@@ -9,12 +9,12 @@ copyright = "IBM & UFCG - 2025"
   tagline = "Blog com relatórios periódicos das tarefas realizadas."
   disableDarkModeCSS = true
   customCSS = ["css/custom.css", "css/font.css"]
-  site_logo = "/llm_ibm_blog.github.io/site_logo.png"
+  site_logo = "/site_logo.png"
   [params.assets]
-    favicon = 'favicon.ico'
-    favicon16x16 = 'favicon-16x16.png'
-    favicon32x32 = 'favicon-32x32.png'
-    appletouchicon = 'apple-touch-icon.png'
+    favicon = '/favicon.ico'
+    favicon16x16 = '/favicon-16x16.png'
+    favicon32x32 = '/favicon-32x32.png'
+    appletouchicon = '/apple-touch-icon.png'
 
 [menu]
   [[menu.main]]

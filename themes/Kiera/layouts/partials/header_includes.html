@@ -1,5 +1,14 @@
-  {{ with .Site.Params.favicon}}
-    <link rel="shortcut icon" href="{{ . }}" />
+  {{ with .Site.Params.assets.favicon }}
+    <link rel="icon" href="{{ . | absURL }}" type="image/x-icon">
+  {{ end }}
+  {{ with .Site.Params.assets.favicon16x16 }}
+    <link rel="icon" href="{{ . | absURL }}" sizes="16x16" type="image/png">
+  {{ end }}
+  {{ with .Site.Params.assets.favicon32x32 }}
+    <link rel="icon" href="{{ . | absURL }}" sizes="32x32" type="image/png">
+  {{ end }}
+  {{ with .Site.Params.assets.appletouchicon }}
+    <link rel="apple-touch-icon" href="{{ . | absURL }}">
   {{ end }}
 
   {{- if .Site.Params.mathjax }}

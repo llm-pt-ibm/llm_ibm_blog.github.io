@@ -2,7 +2,7 @@
 
 # Blog do Projeto LLM-PT-IBM
 
-Este repositório contém o código-fonte do blog do projeto *LLM-PT-IBM*, desenvolvido em parceria entre a **Universidade Federal de Campina Grande (UFCG)** e a **IBM**. O blog apresenta relatórios e resultados relacionados à avaliação de modelos de linguagem para a língua portuguesa. Aqui, você encontrará todo o conteúdo do blog, incluindo posts, análises e atualizações sobre os avanços do projeto. Para visualizar o blog em funcionamento, acesse este [link](https://llm-pt-ibm.github.io/llm_ibm_blog.github.io/).
+Este repositório contém o código-fonte do blog do projeto *LLM-PT-IBM*, desenvolvido em parceria entre a **Universidade Federal de Campina Grande (UFCG)** e a **IBM**. O blog apresenta relatórios e resultados relacionados à avaliação de modelos de linguagem para a língua portuguesa. Aqui, você encontrará todo o conteúdo do blog, incluindo posts, análises e atualizações sobre os avanços do projeto. Para visualizar o blog em funcionamento, acesse este [link](https://llm-pt-ibm.github.io/).
 
 Este blog foi desenvolvido utilizando o Hugo, um framework de geração de sites estáticos rápido e flexível, baseado em Go. Para mais informações, visite a documentação oficial: https://gohugo.io/.
 
@@ -32,7 +32,7 @@ Se o Hugo não estiver instalado, consulte a [documentação oficial](https://go
 
 2. O servidor será iniciado e estará disponível em uma das portas locais. A URL será exibida no terminal, como no exemplo abaixo:
    ```
-   http://localhost:1313/llm_ibm_blog.github.io/
+   http://localhost:1313
    ```
 ### Executando o Servidor Hugo com Docker
 
@@ -57,7 +57,7 @@ Se o Docker não estiver instalado, siga as instruções da [documentação ofic
 
 3. Após rodar o container, você poderá acessar seu site Hugo no navegador em:
    ```
-   http://localhost:1313/llm_ibm_blog.github.io/
+   http://localhost:1313
    ```
 
 ## Adicionando uma publicação ao blog

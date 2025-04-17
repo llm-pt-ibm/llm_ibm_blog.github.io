@@ -59,7 +59,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "https://llm-pt-ibm.github.io/llm_ibm_blog.github.io/"
+            --baseURL "https://llm-pt-ibm.github.io/"
 
       - name: Verify public directory
         run: |
